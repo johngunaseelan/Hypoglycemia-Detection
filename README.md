@@ -132,3 +132,8 @@ The dataset was divided into 60/40 Train test split. The model was able to predi
 curve is displayed below.
 
 ![alt roc-aoc-image](https://github.com/johngunaseelan/Hypoglycemia-Detection/tree/DataWrangling/Meta/roc-aoc.png)
+
+<H3>Conclusion</H3>
+
+This model with 82% accuracy should be very helpful for physicians to identify at risk hypoglycemic patients. A further time
+series model can be created in the future to identify if daily blood sugar levels have anything to do with hypoglycemia.
