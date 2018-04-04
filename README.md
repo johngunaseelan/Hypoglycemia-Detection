@@ -134,7 +134,7 @@ Code and detailed comments can be seen in this
 The dataset was divided into 60/40 Train test split. The model was able to predict with a maximum of 82% accuracy. The ROC-AOC
 curve is displayed below.
 
-![alt roc-aoc-image](https://github.com/johngunaseelan/Hypoglycemia-Detection/tree/DataWrangling/Meta/roc-aoc.png "")
+![roc-aoc-image](https://github.com/johngunaseelan/Hypoglycemia-Detection/tree/DataWrangling/Meta/roc-aoc.png "")
 
 <H3>Confusion Matrix</H3>
 
