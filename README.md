@@ -44,9 +44,9 @@ to predict whether a patient is at rist to experience severe hypoglycemia.</P>
 <H3>Design Of The Study</H3>
 
 <P>The model uses the <a href="https://archive.ics.uci.edu/ml/datasets/diabetes">dataset</a> got from the UCI machine learning 
-repository. A random forest model was created using this dataset to acheive the goal. A three fold cross validation was performed
-on 60/40 train test split to test the accuracy of the model.</P>
+repository. A random forest model was created using this dataset to acheive the goal. A three fold cross validation was performed on 60/40 train test split to test the accuracy of the model.</P>
 
+<P>The implementation was done using python's machine learning libraries like numpy, pandas, matplotlib, seaborn and scikit-learn.
 
 <H3>DataSet</H3>
 
