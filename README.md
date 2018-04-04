@@ -70,7 +70,7 @@ A detailed information on the dataset can be found <a href="https://archive.ics.
 <H4>Data Wrangling</H4>
 
 The following steps were done to clean the data. Code and detailed comments can be seen in this 
-<a href="http://localhost:8889/notebooks/Documents/GitHub/Hypoglycemia-Detection/Code/Data-Wrangling-II.ipynb">link</a>
+<a href="https://github.com/johngunaseelan/Hypoglycemia-Detection/blob/master/Code/Data-Wrangling.ipynb">link</a>
 
 <ol>
 <li>Delete rows that does not have a valid blood glucose value.</li>
@@ -82,7 +82,7 @@ of the numerical feature code. The string representation is got from the data de
 <H4>Exploratory Data Analysis</H4>
 
 <P>Exploratory Dat Analysis was performed and following were the findings. Code and detailed comments can be seen in this 
-<a href="http://localhost:8889/notebooks/Documents/GitHub/Hypoglycemia-Detection/Code/EDA-III.ipynb">link</a></P>
+<a href="https://github.com/johngunaseelan/Hypoglycemia-Detection/blob/master/Code/EDA.ipynb">link</a></P>
 
 <ol>
 <li>The median blood glucose level for hypoglycemic population is slightly higher for non hypoglycemic population</li>
@@ -103,7 +103,7 @@ of the numerical feature code. The string representation is got from the data de
 features as got from correlation matrix. This features will be used to create the machine learning models.</P>
 
 <P>Code and detailed comments can be seen in this 
-<a href="http://localhost:8889/notebooks/Documents/GitHub/Hypoglycemia-Detection/Code/Inferential-Statistics.ipynb">link
+<a href="https://github.com/johngunaseelan/Hypoglycemia-Detection/blob/master/Code/Inferential-Statistics.ipynb">link
 </a></P>
 
 <ol>
@@ -127,7 +127,7 @@ A random forest model was created using the following features.
 </ol>
 
 Code and detailed comments can be seen in this 
-<a href="http://localhost:8889/notebooks/Documents/GitHub/Hypoglycemia-Detection/Code/Machine%20Learning-III.ipynb">link</a>
+<a href="https://github.com/johngunaseelan/Hypoglycemia-Detection/blob/master/Code/Machine%20Learning.ipynb">link</a>
 
 <H3>Testing</H3>
 
