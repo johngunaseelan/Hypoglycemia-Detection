@@ -44,9 +44,9 @@ to predict whether a patient is at rist to experience severe hypoglycemia.</P>
 <H3>Design Of The Study</H3>
 
 <P>The model uses the <a href="https://archive.ics.uci.edu/ml/datasets/diabetes">dataset</a> got from the UCI machine learning 
-repository. A random forest model was created using this dataset to acheive the goal. A three fold cross validation was performed
-on 60/40 train test split to test the accuracy of the model.</P>
+repository. A random forest model was created using this dataset to acheive the goal. A three fold cross validation was performed on 60/40 train test split to test the accuracy of the model.</P>
 
+<P>The implementation was done using python's machine learning libraries like numpy, pandas, matplotlib, seaborn and scikit-learn.
 
 <H3>DataSet</H3>
 
@@ -70,7 +70,7 @@ A detailed information on the dataset can be found <a href="https://archive.ics.
 <H4>Data Wrangling</H4>
 
 The following steps were done to clean the data. Code and detailed comments can be seen in this 
-<a href="http://localhost:8889/notebooks/Documents/GitHub/Hypoglycemia-Detection/Code/Data-Wrangling-II.ipynb">link</a>
+<a href="https://github.com/johngunaseelan/Hypoglycemia-Detection/blob/master/Code/Data-Wrangling.ipynb">link</a>
 
 <ol>
 <li>Delete rows that does not have a valid blood glucose value.</li>
@@ -82,7 +82,7 @@ of the numerical feature code. The string representation is got from the data de
 <H4>Exploratory Data Analysis</H4>
 
 <P>Exploratory Dat Analysis was performed and following were the findings. Code and detailed comments can be seen in this 
-<a href="http://localhost:8889/notebooks/Documents/GitHub/Hypoglycemia-Detection/Code/EDA-III.ipynb">link</a></P>
+<a href="https://github.com/johngunaseelan/Hypoglycemia-Detection/blob/master/Code/EDA.ipynb">link</a></P>
 
 <ol>
 <li>The median blood glucose level for hypoglycemic population is slightly higher for non hypoglycemic population</li>
@@ -103,7 +103,7 @@ of the numerical feature code. The string representation is got from the data de
 features as got from correlation matrix. This features will be used to create the machine learning models.</P>
 
 <P>Code and detailed comments can be seen in this 
-<a href="http://localhost:8889/notebooks/Documents/GitHub/Hypoglycemia-Detection/Code/Inferential-Statistics.ipynb">link
+<a href="https://github.com/johngunaseelan/Hypoglycemia-Detection/blob/master/Code/Inferential-Statistics.ipynb">link
 </a></P>
 
 <ol>
@@ -127,14 +127,14 @@ A random forest model was created using the following features.
 </ol>
 
 Code and detailed comments can be seen in this 
-<a href="http://localhost:8889/notebooks/Documents/GitHub/Hypoglycemia-Detection/Code/Machine%20Learning-III.ipynb">link</a>
+<a href="https://github.com/johngunaseelan/Hypoglycemia-Detection/blob/master/Code/Machine%20Learning.ipynb">link</a>
 
 <H3>Testing</H3>
 
 The dataset was divided into 60/40 Train test split. The model was able to predict with a maximum of 82% accuracy. The ROC-AOC
 curve is displayed below.
 
-![alt roc-aoc-image](https://github.com/johngunaseelan/Hypoglycemia-Detection/tree/DataWrangling/Meta/roc-aoc.png "")
+![roc-aoc-image](https://github.com/johngunaseelan/Hypoglycemia-Detection/tree/DataWrangling/Meta/roc-aoc.png "")
 
 <H3>Confusion Matrix</H3>
 
