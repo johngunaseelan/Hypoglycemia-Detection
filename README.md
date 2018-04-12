@@ -4,17 +4,18 @@
 
 <H3>Project Overview</H3>
 
-1.Introduction
+1.**Introduction**
 
   This tool is developed for the use of type 1 diabetics or physicians and other medical professionals who treat type 1 
 diabetics to predict a patient's risk of hypoglycemia using machine learning models.
 
-2.Scope
+2.**Scope**
 
   To predict a patient's possibility of experiencing severe hypoglycemic events based on blood glucose levels and his/her
 day to day activities
 
-3.Out Of Scope
+3.**Out Of Scope**
+
   Hypoglycemic unawareness, hyperglycemia or any other complications is beyond the scope of this project.
 
 
