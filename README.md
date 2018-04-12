@@ -48,7 +48,7 @@ repository. A random forest model was created using this dataset to acheive the 
 
 <P>The implementation was done using python's machine learning libraries like numpy, pandas, matplotlib, seaborn and scikit-learn.
 
-<H3>DataSet</H3>
+<H3>Data Description</H3>
 
 <p>The <a href="https://archive.ics.uci.edu/ml/datasets/diabetes">dataset</a> is a multivariate time series dataset.</p>
 
@@ -126,9 +126,7 @@ From EDA conclusions, we can infer that patients experience hypoglycemia for a n
 2) Strict control - People who are very conscious about their day to day activities also experience hypoglycemia as their efforts maintain optimal blood glucose levels sometimes lead to very low blood glucose levels which leads to hypoglycemic symptoms.
 3) NPH insulin - People on NPH insulin are more prone to hypoglycemia.
 
-We can see that there are three different sub populations within the hypoglycemic population.
-
-Due to the wide range of features that we have to take into account random forest algorithm is the best fit.
+We can see that there are three different sub populations within the hypoglycemic population. This makes random forest a best fit for the problem.
 
 A random forest model was created using the following features.
 
