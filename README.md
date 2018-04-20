@@ -18,7 +18,9 @@ day to day activities
 
   Hypoglycemic unawareness, hyperglycemia or any other complications is beyond the scope of this project.
 
+4.**Limitation**
 
+  The dataset only has the records of 70 patients which may not be sufficient to understand the complete picture.
 
 <H3>Background</H3>
 
@@ -67,7 +69,7 @@ A detailed information on the dataset can be found <a href="https://archive.ics.
 
 <H3>Procedure</H3>
 
-<H4>Data Wrangling</H4>
+<H4>Preliminary Analysis - Data Wrangling</H4>
 
 The following steps were done to clean the data. Code and detailed comments can be seen in this 
 <a href="https://github.com/johngunaseelan/Hypoglycemia-Detection/blob/master/Code/Data-Wrangling.ipynb">link.</a>
@@ -81,7 +83,7 @@ of the numerical feature code. The string representation is got from the data de
 
 97% of the observations have been preserved.
 
-<H4>Exploratory Data Analysis</H4>
+<H4>Preliminary Analysis - Exploratory Data Analysis</H4>
 
 <P>Exploratory Dat Analysis was performed and following were the findings. Code and detailed comments can be seen in this 
 <a href="https://github.com/johngunaseelan/Hypoglycemia-Detection/blob/master/Code/EDA.ipynb">link.</a></P>
@@ -128,7 +130,7 @@ From EDA conclusions, we can infer that patients experience hypoglycemia for a n
 2) Strict control - People who are very conscious about their day to day activities also experience hypoglycemia as their efforts maintain optimal blood glucose levels sometimes lead to very low blood glucose levels which leads to hypoglycemic symptoms.
 3) NPH insulin - People on NPH insulin are more prone to hypoglycemia.
 
-We can see that there are three different sub populations within the hypoglycemic population. This makes random forest a best fit for the problem.
+We can see that there are three different sub populations within the hypoglycemic population. The number of categorical feature is one one. This makes random forest a best fit for the problem than other classifiers like SVM or KNN.
 
 A random forest model was created using the following features.
 
@@ -145,7 +147,7 @@ Code and detailed comments can be seen in this
 
 <H3>Testing</H3>
 
-The dataset was divided into 60/40 Train test split. The model was able to predict with a maximum of 82% accuracy. The ROC-AOC
+The dataset was divided into 60/40 Train test split. The model was able to predict with a maximum of 82% accuracy(AUROC). The ROC-AOC
 curve is displayed below.
 
 ![roc-aoc-image](https://github.com/johngunaseelan/Hypoglycemia-Detection/tree/DataWrangling/Meta/roc-aoc.png "")
