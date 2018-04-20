@@ -69,7 +69,7 @@ A detailed information on the dataset can be found <a href="https://archive.ics.
 
 <H3>Procedure</H3>
 
-<H4>Preliminary Analysis - Data Wrangling</H4>
+<H4>Data Wrangling</H4>
 
 The following steps were done to clean the data. Code and detailed comments can be seen in this 
 <a href="https://github.com/johngunaseelan/Hypoglycemia-Detection/blob/master/Code/Data-Wrangling.ipynb">link.</a>
@@ -101,7 +101,7 @@ of the numerical feature code. The string representation is got from the data de
 <li>The hypoglycemic population had significantly higher blood glucose levels post lunch on non hypoglycemic days than on hypoglycemic days</li>
 </ol>
 
-<H4>Inferential Statistics</H4>
+<H4>Preliminary Analysis - Inferential Statistics</H4>
 
 <P>A correlation matrix was created using the most significant features that were got from EDA. Below is the most significant 
 features as got from correlation matrix. This features will be used to create the machine learning models.</P>
@@ -185,4 +185,4 @@ Our study focuses on helping out the doctors and patients to better control the 
 3) NPH insulin users can discuss with the physicians for alternate treatments.
 4) A strict control may not be neccessary. blood glucose target levels can be slightly higher for diabetics than the normal population.
 
-This model with 82% accuracy should be very helpful for physicians to identify at risk hypoglycemic patients and treat them better. Further studies are required in this area to help the patients and physicians.
+This model with 82%(AUROC) accuracy should be very helpful for physicians to identify at risk hypoglycemic patients and treat them better. Further studies are required in this area to help the patients and physicians.
