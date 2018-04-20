@@ -18,7 +18,9 @@ day to day activities
 
   Hypoglycemic unawareness, hyperglycemia or any other complications is beyond the scope of this project.
 
+4.**Limitation**
 
+  The dataset only has the records of 70 patients which may not be sufficient to understand the complete picture.
 
 <H3>Background</H3>
 
@@ -48,7 +50,7 @@ repository. A random forest model was created using this dataset to acheive the 
 
 <P>The implementation was done using python's machine learning libraries like numpy, pandas, matplotlib, seaborn and scikit-learn.
 
-<H3>DataSet</H3>
+<H3>Data Description</H3>
 
 <p>The <a href="https://archive.ics.uci.edu/ml/datasets/diabetes">dataset</a> is a multivariate time series dataset.</p>
 
@@ -67,10 +69,10 @@ A detailed information on the dataset can be found <a href="https://archive.ics.
 
 <H3>Procedure</H3>
 
-<H4>Data Wrangling</H4>
+<H4>Preliminary Analysis - Data Wrangling</H4>
 
 The following steps were done to clean the data. Code and detailed comments can be seen in this 
-<a href="https://github.com/johngunaseelan/Hypoglycemia-Detection/blob/master/Code/Data-Wrangling.ipynb">link</a>
+<a href="https://github.com/johngunaseelan/Hypoglycemia-Detection/blob/master/Code/Data-Wrangling.ipynb">link.</a>
 
 <ol>
 <li>Delete rows that does not have a valid blood glucose value.</li>
@@ -79,10 +81,12 @@ of the numerical feature code. The string representation is got from the data de
 <li>Alter date and time for invalid values by comparing with previous rows.</li>
 </ol>
 
-<H4>Exploratory Data Analysis</H4>
+97% of the observations have been preserved.
+
+<H4>Preliminary Analysis - Exploratory Data Analysis</H4>
 
 <P>Exploratory Dat Analysis was performed and following were the findings. Code and detailed comments can be seen in this 
-<a href="https://github.com/johngunaseelan/Hypoglycemia-Detection/blob/master/Code/EDA.ipynb">link</a></P>
+<a href="https://github.com/johngunaseelan/Hypoglycemia-Detection/blob/master/Code/EDA.ipynb">link.</a></P>
 
 <ol>
 <li>The median blood glucose level for hypoglycemic population is slightly higher for non hypoglycemic population</li>
@@ -103,7 +107,7 @@ of the numerical feature code. The string representation is got from the data de
 features as got from correlation matrix. This features will be used to create the machine learning models.</P>
 
 <P>Code and detailed comments can be seen in this 
-<a href="https://github.com/johngunaseelan/Hypoglycemia-Detection/blob/master/Code/Inferential-Statistics.ipynb">link
+<a href="https://github.com/johngunaseelan/Hypoglycemia-Detection/blob/master/Code/Inferential-Statistics.ipynb">link.
 </a></P>
 
 <ol>
@@ -116,6 +120,18 @@ features as got from correlation matrix. This features will be used to create th
 
 <H4>Machine Learning</H4>
 
+Random forest model seems to be the best algorithm for this problem.
+
+<H4>Why Random Forest?</H4>
+
+From EDA conclusions, we can infer that patients experience hypoglycemia for a number of independent reasons.
+
+1) Being irregular with diet, exercise and snacking.
+2) Strict control - People who are very conscious about their day to day activities also experience hypoglycemia as their efforts maintain optimal blood glucose levels sometimes lead to very low blood glucose levels which leads to hypoglycemic symptoms.
+3) NPH insulin - People on NPH insulin are more prone to hypoglycemia.
+
+We can see that there are three different sub populations within the hypoglycemic population. The number of categorical feature is one one. This makes random forest a best fit for the problem than other classifiers like SVM or KNN.
+
 A random forest model was created using the following features.
 
 <ol>
@@ -127,11 +143,11 @@ A random forest model was created using the following features.
 </ol>
 
 Code and detailed comments can be seen in this 
-<a href="https://github.com/johngunaseelan/Hypoglycemia-Detection/blob/master/Code/Machine%20Learning.ipynb">link</a>
+<a href="https://github.com/johngunaseelan/Hypoglycemia-Detection/blob/master/Code/Machine%20Learning.ipynb">link.</a>
 
 <H3>Testing</H3>
 
-The dataset was divided into 60/40 Train test split. The model was able to predict with a maximum of 82% accuracy. The ROC-AOC
+The dataset was divided into 60/40 Train test split. The model was able to predict with a maximum of 82% accuracy(AUROC). The ROC-AOC
 curve is displayed below.
 
 ![roc-aoc-image](https://github.com/johngunaseelan/Hypoglycemia-Detection/tree/DataWrangling/Meta/roc-aoc.png "")
@@ -158,5 +174,15 @@ curve is displayed below.
 
 <H3>Conclusion</H3>
 
-This model with 82% accuracy should be very helpful for physicians to identify at risk hypoglycemic patients. A further time
-series model can be created in the future to identify if daily blood sugar levels have anything to do with hypoglycemia.
+Hypoglycemia has always been the toughest problem for both the diabetic patients and the doctors. The doctors are helpless when it comes to glucose control as the lab reports can not convey the entire picture. With the latest advances in technology lab reports can now say the blood glucose levels at a certain point of time and the average blood glucose level for the past 3 months(Hba1c test). These reports can not say anything about a patient's risk of hypoglycemia or diabetic neuropathy(long term complications like kidney and eye damage). 
+
+The patient's only option left is to check his glucose levels as frequent as possible. So a large data is generated. But, this data is left mostly unused and untouched. Medical science is yet to understand why few diabetic patients are more prone to hypoglycemia and diabetic neuropathy and other patients dont. Billions of dollors are spent every year on research and control of the disease. Even with millions of diabetics around the world medical science still does not know its causes or its cure. Can data science be the missing link to solve these riddles? I strongly believe so. 
+
+Our study focuses on helping out the doctors and patients to better control the disease. In our study of seventy patients we have identified sub populations within the hypoglycemia prone diabetics. We have identified few day to day habits that are major causes. Below is our recommendations to the diabetics from our study.
+
+1) Be regular in your day to day activities. Maintain a pattern with diet and exercise.
+2) Snack less. Snacks are known to contain a lot of carbs. Lesser the snacks greater the control.
+3) NPH insulin users can discuss with the physicians for alternate treatments.
+4) A strict control may not be neccessary. blood glucose target levels can be slightly higher for diabetics than the normal population.
+
+This model with 82% accuracy should be very helpful for physicians to identify at risk hypoglycemic patients and treat them better. Further studies are required in this area to help the patients and physicians.
