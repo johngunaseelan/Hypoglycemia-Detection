@@ -1,4 +1,4 @@
-<H1 style="text-align: center;">Identifying Type 1 Diabetics With Severe Hypoglycemic Risks
+<H1 style="text-align: center;">Random Forest Model To Identify Severe Hypoglycemic Risk Patients
 
 </H1>
 
